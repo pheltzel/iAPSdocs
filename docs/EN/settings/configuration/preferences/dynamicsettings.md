@@ -50,15 +50,15 @@ Please read [Autosens and Dynamic ISF/ICR](../concepts/autosens-dynamic.md) for 
 
 Adjust basal replaces the sensitivity-based formula normally used by autosens for adjusting your basal rates, with one dependent on your TDD of insulin. Use this if iAPS is not by default suggesting adequate basal rates for you.
 
-## Threshold Setting (mg/dl)
+## Threshold Setting (mg/dL)
 The threshold setting is a safety limiter function. If blood sugar at any point is predicted to go below this value, iAPS will suspend insulin delivery (SMBs are halted and Temp Basal of 0 U/hr set) and wait till its algorithms predict otherwise. This setting can be useful if you are experiencing a high number of hypoglycemia events. <a href="https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/Understand-determine-basal.html?highlight=Safety%20Threshold">Please review the OpenAPS documents if you want a better understanding of how it is used.</a> The threshold setting is by default determined by your blood glucose target setting:
 
-- Lower Target: 90 mg/dl = Threshold 65 mg/dl 
-- Lower Target: 100 mg/dl = Threshold 70 mg/dl 
-- Lower Target: 110 mg/dl = Threshold 75 mg/dl 
-- Lower Target: 130 mg/dl = Threshold 85 mg/dl 
+- Lower Target: 90 mg/dL = Threshold 65 mg/dl 
+- Lower Target: 100 mg/dL = Threshold 70 mg/dl 
+- Lower Target: 110 mg/dL= Threshold 75 mg/dl 
+- Lower Target: 130 mg/dL = Threshold 85 mg/dl 
 
 
-This setting allows you to choose a higher threshold setting than default. Note that you cannot choose something that is lower than the default setting for a certain blood glucose target.
+This setting allows you to choose a higher threshold setting than default. Note that you cannot choose something that is lower than the default setting for a certain blood glucose target. Important note: The maximum setting is 120 mg/dL, a higher number will revert the threshold to its lowest setting. 
 
 Ex: Bill has set a BG target of 110 mg/dl. He has set his threshold to 65 mg/dl in his iAPS preferences. Because iAPS's default threshold setting is 75 mg/dl for 110 mg/dl blood glucose target, Bill's preference will be ignored.
