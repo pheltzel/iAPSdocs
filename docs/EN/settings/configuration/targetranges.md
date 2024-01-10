@@ -1,8 +1,11 @@
-# Target Ranges
+# Target Glucose
 :::{admonition} Highlights
 :class: important
-- Set your lower target between 5-6 mmol/L (90-110 mg/dL)
+-  Most users do not set the Target Glucose setting lower than 5-6 mmol/L (90-110 mg/dL), to reduce the chance of iAPS or the user overcorrecting and causing a low.
 :::
-This allows you to set your target blood sugar range. Note that the upper target was an older feature in OpenAPS and is not used in the latest version of iAPS which completely ignores the upper target. In other words, if your range is set at 5-5.5 mmol/L, iAPS treats it as 5-5 mmol/L.
+The Target Glucose setting allows you to set a number for the system to aim for, in setting temporary basals and when calculating bolus doses.
 
-Generally, a low target between 5-6 mmol/L (90-110 mg/dL) is set by most users, or 1.5 mmol/L (30 mg/dL) above where they start feeling a low.
+Consult with your healthcare profesional on an appropriate target for your blood sugar.
+
+
+
