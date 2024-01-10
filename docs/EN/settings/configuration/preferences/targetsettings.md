@@ -16,9 +16,7 @@ Please read [Autosens and Dynamic ISF/ICR](../concepts/autosens-dynamic.md) for 
 When planning to have a heavy meal, you may want to set a low temporary target to avoid high blood sugar spikes. You may also want iAPS to deliver more insulin during this time to prevent meals from spiking too high. Enabling this feature will increase your autosens.ratio, which is utilized for ISF and basal adjustments, resulting in greater insulin delivery. This will allow iAPS to better deal with post-prandial spiking.
 
 ## Sensitivity Raises Target
-When performing autosens and insulin dosing calculations, iAPS uses a target blood glucose that is by default the lower value in your target range.
-
-Example: Bill has a target range of 5.5 to 6.0. His target blood glucose is thus 5.5. (Note that Bill's target is not exactly this value; iAPS alters the target via autosens to improve its dosing)
+When performing autosens and insulin dosing calculations, iAPS uses your Target Glucose setting.
 
 When "Sensitivity Raises Target" is enabled, iAPS will set a higher blood glucose target to base its insulin dosage calculations off of if it detects sensitivity. This can be useful if you find iAPS is too aggressively.
 
